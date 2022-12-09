@@ -18,4 +18,4 @@ java -jar jarPath/jarname -cluster
 
 ## Output
 
-![alt text](https://github.com/BarathCloudRipples/VertxHazelcast/tree/master/SendMailCluster/Output/mail.png?raw=true)
+<img width="200" alt="GFG" src="https://github.com/BarathCloudRipples/VertxHazelcast/tree/master/SendMailCluster/Output/mail.png">
