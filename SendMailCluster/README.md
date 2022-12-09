@@ -18,4 +18,4 @@ java -jar jarPath/jarname -cluster
 
 ## Output
 
-<img width="2000" alt="GFG" src="https://user-images.githubusercontent.com/117383104/206708544-f7197320-100c-4916-a7a4-1a197ba7cce8.png">
+<img width="2000" alt="GFG" src="https://user-images.githubusercontent.com/117383104/206710767-335fdc5b-9893-4a8a-a7e7-4dc930758968.png">
