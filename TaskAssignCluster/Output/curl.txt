@@ -1,0 +1,94 @@
+
+
+			____________________________________________
+
+			     Creating Task and Assign to User
+			____________________________________________
+
+
+
+
+
+Create task POST method :
+
+	curl --location --request POST 'localhost:8080/task' \
+--header 'Authorization: f229c6d8-13f5-4109-a930-e5ae58f406fe' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "Hazelcast Cluster Manager",
+    "description": "Achieve Hazelcast cluster in vertx project by creating two microservices."
+}'
+
+output :
+
+{
+    "successMessage": "Task created successfully"
+}
+
+
+------------------------------------------------------------------------------------------------
+
+
+Assigning task POST method :
+
+	curl --location --request POST 'localhost:8080/task/assign' \
+--header 'Authorization: 0332a4cc-d89a-4114-b8bf-a49b86996d2e' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "assignto": "barath",
+    "status": "open",
+    "timeline": "Dec 9 10:30 am",
+    "task": {
+        "taskid": 7
+    }
+}'
+
+output :
+
+{
+    "successMessage": "User assigned successfully"
+}
+
+
+------------------------------------------------------------------------------------------------
+
+
+List task by name GET method :
+
+	curl --location --request GET 'localhost:8080/task/list/barath' \
+--header 'Authorization: 0332a4cc-d89a-4114-b8bf-a49b86996d2e'
+
+
+output :
+
+[
+    {
+        "assignid": 2,
+        "assignto": "barath",
+        "status": "pending",
+        "timeline": "Nov 9 6:30 pm",
+        "task": {
+            "taskid": 2,
+            "title": "Task Management 2",
+            "description": "creating task progress for user/admin role"
+        }
+    },
+    {
+        "assignid": 3,
+        "assignto": "barath",
+        "status": "open",
+        "timeline": "Dec 9 10:30 am",
+        "task": {
+            "taskid": 7,
+            "title": "Hazelcast Cluster Manager",
+            "description": "Achieve Hazelcast cluster in vertx project by creating two microservices."
+        }
+    }
+]
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+

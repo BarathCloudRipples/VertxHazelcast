@@ -1,0 +1,27 @@
+
+
+			____________________________________________
+
+			     Sending task details to users mail
+			____________________________________________
+
+
+
+
+
+Send mail POST method :
+
+	curl --location --request POST 'localhost:8081/email/send/3' \
+--header 'Authorization: 0332a4cc-d89a-4114-b8bf-a49b86996d2e'
+
+output :
+
+{
+    "successMessage": "Mail send to barath successfully"
+}
+
+
+------------------------------------------------------------------------------------------------
+
+
+
