@@ -15,3 +15,7 @@ To run the clustering suite, open a terminal and type:
 ```
 java -jar jarPath/jarname -cluster
 ```
+
+## Output
+
+![alt text](https://github.com/BarathCloudRipples/VertxHazelcast/tree/master/SendMailCluster/Output/mail.png?raw=true)
