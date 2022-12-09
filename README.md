@@ -12,7 +12,6 @@ Please see the main documentation on the web-site for a full description:
 ## Running Jar file
 
 To run the clustering suite, open a terminal and type:
-
-----
+```
 java -jar jarPath/jarname -cluster
-----
+```
